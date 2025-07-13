@@ -1,0 +1,325 @@
+/* COURSE: CRTY 1033: WEB MAPPING
+PURPOSE: A3 - AI2HTML: THEMATIC MAP OF SWEDEN AND ITS PROVINCES
+AUTHOR: DEANNE WATTS
+VERSION 1:  February 11, 2025 (SUBMISSION DATE) */
+
+/* css reset block, asterisk to target everything */
+* {
+  box-sizing: border-box;
+}
+
+/* tartgetting all html and body to add default font sizing, margins/padding, web-friendly font to reset browser */
+html,
+body {
+    font-size: 16px;
+    /* resets border around entire web page*/
+    margin: 0;
+    padding: 0;
+	/* setting google font "Mulish" as default font, helvetica as backup */
+    font-family: "Mulish", helvetica, sans-serif;
+	font-weight: 300;
+    font-style: normal;
+}
+/* End block */
+
+/* calling on the header container for styling */
+header {
+    /* applied opacity to colour itself to create translucent containers */
+	background-color: #162c37de;
+    padding: 0.5rem;
+    text-align: center;
+	/* set z-index to specify drawing order; value of 1 will place header above elements with a lower z-index value */
+	z-index: 1;
+}
+/* calling on h2 - main webpage heading within header for styling */
+h2 {
+	color: #f5c7bf;
+	font-size: 65px;
+	/* specifying font family different than reset */
+	font-family: "Thesadith";
+	font-weight: 500;
+	padding: 0rem;
+	margin: 0.5rem;
+	/* increasing spacing between individual letters */
+	letter-spacing: 20px;
+	font-style: italic;
+}
+/* calling on web page subheading for styling */
+h3 {
+	color: #f6faee;
+	font-size: 30px;
+	padding: 0rem;
+	margin: 1rem;
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+/* calling on h4 subheadings (used within narrative texts) */
+h4 {
+	color: #f5c7bf;
+	font-size: 25px;
+	padding: 0rem;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+
+/* Container for flexboxes; applying flex properties to container*/
+.main-container {
+    display: -webkit-flex;
+    display: flex;
+	/* settings for content outside of display, prevent content from exceeding viewport */
+	overflow: hidden;
+}
+
+/* Style the aside container */
+aside {
+	position: relative;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    /* flex shrink, flex grow set to '0'; applying 30% width to the aside container as "flex-basis" */
+    flex: 0 0 30%;
+	margin: 0.5rem 0rem 0rem 0.5rem;
+    padding: 0.5rem 2rem;
+	text-align: justify;
+    text-justify: inter-word;
+    color: #f6faee;
+	border-radius: 20px;
+	background-color: #152934a1;
+	/* opacity: 100%; */
+	z-index: 1;
+}
+/* calling on section outlining steps to develop web page for specific styling */
+.production {
+	color: #f6faee;
+	border-radius: 20px;
+	margin: 0.5rem;
+	padding: 0.5rem 2rem;
+	text-align: justify;
+    text-justify: inter-word;
+	background-color: #152934a1;
+	z-index: 1;
+}
+
+/* calling on background image applied in html */
+.backgroundimage {
+	/* fixed parameter sets the image in place relative to the viewport, prevents scrolling of image */
+	position: fixed;
+	/* sets image to cover entire background, prevents exteme skewing of image */
+	object-fit:cover;
+	/* top and left parameters set image to top-left corner of web page/viewport */
+	top: 0;
+    left: 0;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* applies opacity to background image, enhancing figure-ground relationship */
+	opacity: 35%;
+	padding: 0rem;
+	margin: 0rem;
+	/* makes the image extend to the width of viewport */
+	width: 100%;
+	/* sets the height of the image to 100% of the viewport height (vh) */
+	height: 100vh;
+	/* z-index specifies how elements are stacked on the web page. Using -1 sets the image to the very back of the drawing order */
+	z-index: -1;
+}
+
+/* Style the content */
+.map-container {
+	/* setting flex properties for map/svg image */
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    /* setting position of svg relative to its own normal position */
+	position: relative;
+	/* flex shrink, flex grow set to '0'; applying 70% width to the container as "flex-basis" to total 100% between aside and section*/
+	flex: 0 0 70%;
+    padding: 2rem 5rem 2rem 10rem;
+    color: #242131;
+	/* z-index specifies how elements are stacked on the web page. Using 3 sets the map container to the very top of the drawing order */
+	z-index: 3;
+}
+
+/* calling on the footer for styling */
+footer {
+    background-color: #162c37de;
+	margin: 0.5rem 0rem 0rem 0rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: #e5d2cf;
+	font-size: 14pt;
+}
+
+/* callingon reference class for specific styling of reference list */
+.references {
+    margin: 0 auto;
+    /* max-width: 60%; */
+	font-size: 11pt;
+}
+/* calling on disclaimer class to apply specific styling */
+.disclaimer {
+	/* specifying max width for text to be displayed */
+    margin: auto;
+    max-width: 40%;
+	padding: 1rem 0rem 0rem 0rem;
+}
+/* calling on logo to set size for appropriate hierarchy */
+.logo {
+	width: 20%;
+	padding: 1rem;
+}
+
+/* calling on footerlinks class, all anchored hyperlinks that were specified in this class in the html. Includes all links outside of svg for specific styling */
+.footerlinks{
+	color: #e5d2cf;
+	font-weight: 500;
+}
+
+/* calling on all anchored hyperlinks to remove underline on hyperlinked text; applying colour to overwrite default blue hyperlinks. Note - this only applies to hyperlinks on SVG, as all other hyperlinks have been classed under "footerlinks" with separate styling*/
+a {
+	text-decoration: none;
+	color: #5c5252;
+}
+
+/* applying styling to hyperlinked text when mouse hovers over anchored hyperlinks, calling on <a> tag */
+a:hover {
+	font-style: italic;
+	/* applying a glow around hyperlinked text when mouse hovers; 0px offset down and right, 10px extent of glow */
+	text-shadow: 0px 0px 10px #d3a59e;
+	/* enlarging hyperlink to 20px size to emphasize link */
+	font-size: 20px;
+}
+
+/* specifically target credit hover to adjust font size - prevent the link from scaling down when hovering to a 20px font as set above */
+.credit a:hover {
+	font-size: 26px;
+}
+/* call upon parkname class to maintain colour styling for park/nature reserve labels */
+.parkname {
+	color: #5a6971;
+}
+
+/* pulled below content from AI2HTML-generated HTML code, brought from within the <style> tags in the HTML. Brought into CSS for file based styling vs in-line styling in HTML. Pasted at end of web page css styling, but ABOVE @media query */
+#g-Sweden_NPs-box ,
+	#g-Sweden_NPs-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-Sweden_NPs-box p {
+		margin:0;
+	}
+	#g-Sweden_NPs-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-Sweden_NPs-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-Sweden_NPs-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-Sweden_NPs-box .g-aiPointText p { white-space: nowrap; }
+	#g-Sweden_NPs-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-Sweden_NPs-Artboard_1 p {
+		font-weight:regular;
+		line-height:15px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:15px;
+		text-align:left;
+		color:rgb(90,105,113);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle0 {
+		font-weight:500;
+		height:15px;
+		text-align:center;
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle1 {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:22px;
+		height:22px;
+		font-size:18px;
+		text-align:center;
+		color:rgb(92,82,82);
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle2 {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:19px;
+		height:19px;
+		font-size:16px;
+		text-align:center;
+		color:rgb(92,82,82);
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle3 {
+		font-weight:500;
+		line-height:12px;
+		height:12px;
+		font-size:11px;
+		text-align:center;
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle4 {
+		font-weight:500;
+		height:15px;
+		font-size:12px;
+		text-align:center;
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle5 {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:18px;
+		height:18px;
+		text-align:center;
+		color:rgb(92,82,82);
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle6 {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:13px;
+		height:13px;
+		text-align:center;
+		color:rgb(92,82,82);
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle7 {
+		font-weight:500;
+		height:15px;
+		font-size:10px;
+		text-align:center;
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle8 {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:16px;
+		height:16px;
+		font-size:16px;
+		text-align:center;
+		color:rgb(92,82,82);
+	}
+	#g-Sweden_NPs-Artboard_1 .g-pstyle9 {
+		font-weight:500;
+		height:15px;
+		font-size:18px;
+		text-align:center;
+	}
+
+
+/*mobile media query; creates Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other when the view port shrinks */
+/* when screen or browser is less than 800, media query activates realignment of containers */
+@media (max-width: 800px) {
+  section {
+	/* column sets how the realignment will function, adjusting from side-by-side to columnar */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

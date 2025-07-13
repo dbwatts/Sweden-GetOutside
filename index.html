@@ -1,0 +1,352 @@
+<!-- COURSE: CRTY 1033: WEB MAPPING -->
+<!-- PURPOSE: A3 - AI2HTML: THEMATIC MAP OF SWEDEN AND ITS PROVINCES -->
+<!-- AUTHOR: DEANNE WATTS -->
+<!-- VERSION 1:  February 11, 2025 (SUBMISSION DATE)-->
+
+<!-- declaration of document type -->
+<!DOCTYPE html>
+<!-- html structure and doc set to english -->
+<html lang="en">
+<!-- head element to hold metadata -->
+    <head>
+        <!-- set character encoding to utf-8 -->
+        <meta charset="utf-8">
+        <!-- keywords set for improved search engine operability  -->
+        <meta name="keywords" content="html, web page, crty1033, sweden, swedish national parks, swedish nature reserves, swedish provinces, swedish protected areas, provincial sweden, swedish provincial protected areas">
+        <!-- set the viewport for responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- link to internal style sheet; included type = text/css to identify file type of stylesheet -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- link to google fonts "Mulish", "Thesadith" -->
+        <!-- "Mulish" font is available by Google Fonts under the Open Font Licence, designed by Vernon Adams, Cyreal, & Jacques Le Bailly and Available through https://fonts.google.com/specimen/Mulish; "Thesadith" is available by Google Fonts under the Open Font Licence, designed by Cadson Demak and Available from https://fonts.google.com/specimen/Thasadith/license-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!-- title for webpage viewable in browser tab  -->
+        <title>Swedish Protected Areas</title>
+    </head>
+    <!-- body element; classed as 'whole-page bordered' to be called on specifically in css styling, separate from individual header/aside/section containers -->
+    <body class="whole-page-bordered">
+        <!-- inserting a background image to be applied to the background of the entire web page, classed to be styled in css -->
+        <img src="img/COASTLINE.jpg" alt="Aerial view of Swedish coastline" class="backgroundimage">
+        <!-- header section to include web page title -->
+        <header>
+            <!-- h2 for title hierarchy -->
+            <h2>Get Outside!</h2>
+            <!-- h3 for subtitle hierarchy -->
+            <h3>A Guide to Sweden's Protected Areas</h3>
+        </header>
+        <!-- container holding the aside and section sub containers; classed main-containter for css styling -->
+        <section class="main-container">
+            <!-- semantic aside container; to be displayed to the left of webpage -->
+            <aside>
+                <!-- h4 for sub heading hierarchy -->
+                <h4>Sweden's Wild Landscapes</h4>
+                <!-- Assignment narrative content -->
+                <p>This web page presents a map of the country of Sweden, divided into its 25 historical provinces. Sweden’s Provinces, referred to as <i>Landskap</i> in Swedish, have deep historical roots dating back to the medieval era (Högman, 2019). While these provincial boundaries no longer hold administrative or political significance, they remain culturally meaningful to many Swedes and are still frequently referenced in modern conversation (Högman, 2019).
+                <!-- line breaks for readability -->
+                <br>
+                <br>
+                While Sweden’s Landskap are known for their rich cultural heritage, they are further distinguished by awe-inspiring landscapes, each more unique than the last. Sweden is committed to protecting these natural environments, and established it’s first nine National Parks in 1909— the first designated National Parks in all of Europe (Sveriges Nationalparker, 2025). Since that time, Sweden has established 30 national parks and almost 4,000 nature reserves, in an effort to protect and preserve Sweden’s wild spaces and biodiversity (Naturvårdsverket, 2025; Sveriges Nationalparker, 2025). 
+                <!-- line breaks for readability -->
+                <br>
+                <br>
+                Sweden’s natural landscape can be characterized by six unique habitat types, including lakes and watercourses, mountains, coast and sea, broad-leaved deciduous forests, wetlands, and coniferous forests (Sveriges Nationalparker, 2025).  Each province boasts unique natutral terrain, and the National Parks and Nature Reserves collectively protect all these unique habitats, offering opportunity to experience the diversity of Sweden’s landscape and discover what makes Sweden’s natural environment so special.
+                <!-- line breaks for readability -->
+                <br>
+                <br>
+                This map is a reference guide to Sweden’s vast wilderness, with a directory to learn more about the natural landscapes of this nordic country. The map illustrates all thirty of Sweden’s national parks by province, as well as some of the best-known Nature Reserves in the few provinces in which National Parks have not been established. Learn more about the natural landscapes of each province by clicking on the <u>Landskap name</u>, and click on the <u>park</u> or <u>nature reserve</u> name to learn more about that specific protected area.*
+                <!-- line breaks for readability -->
+                <br>
+                <br>
+                <!-- small tag to reduce importance of * content as a footnote to the narrative above -->
+                <!-- anchored hyperlinks included within to direct user as discussed in narrative -->
+                <small>*Please note: some of the web pages linked on this web page do not automatically translate into English. If any of the linked web pages appear in Swedish, please consider installing a translator extension into your browser to enable translation services, such as <a href="https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en&pli=1" target="_blank" class="footerlinks">Google Translate</a> for Chrome, <a href="https://microsoftedge.microsoft.com/addons/detail/edge-translate/bfdogplmndidlpjfhoijckpakkdjkkil" target="_blank" class="footerlinks">Edge Translate</a> for Edge, or <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/" target="_blank" class="footerlinks">Firefox Translations</a> for Firefox.</small>
+                <br>
+                <br>
+                </p>
+                <!-- h4 for subheading hierarchy  -->
+                <h4>Assignment Objectives</h4>
+                <p>The purpose of this assignment was to enable students, as new developers, to expand our foundational web-development skillset we have developed so far through the GIS: Cartography and Geovisualization program. This assignment enabled not only practice of the skills we have already learned related to HTML, CSS and JavaScript, but to further enhance these skills through the integration of pre-developed tools like ai2html. 
+                <br>
+                <br>
+                Use of the ai2html script enabled further practice in linking and application of JavaScript into our web pages, and also taught us how to transform otherwise static images into dynamic and scalable web maps (or graphics) within our web pages, reinforcing the key concepts of web mapping and responsive design. This assignment also enabled further practice in applying meaningful cartographic customizations, to enable us as developers to further incorporate cartographic design principles and theory to create an engaging and thematically relevant web page. By incorporating hyperlinks to external resources, the web map becomes interactive, enhancing overall user engagement with the web page. Finally, this assignment further reinforced best practices in file organization, which is a key skill required in the development of any mapping or geovisualization project.  
+                </p>
+            </aside>
+            <!-- New section containter to contain map; to be displayed to the right of the aside. "main-containter" class assigned for css styling-->
+            <section class="map-container">
+                <!-- below content copied from ai2html output. Note: copied directly from output html, key revisions include: removing the <style=""> attribute, as the inline styling was tranferred to css stylesheet; updating <alt=""> to include alt text for svg file; updating <src=""> attribute to include correct pathway to svg image output from ai2html; anchored hyperlinks throughout code block to link province names to appropriate web pages -->
+                <div id="g-Sweden_NPs-box" class="ai2html">
+
+                    <!-- Artboard: Artboard_1 -->
+                    <div id="g-Sweden_NPs-Artboard_1" class="g-artboard" data-aspect-ratio="0.576" data-min-width="0">
+                        <div style="padding: 0 0 173.715% 0;"></div>
+                        <!-- note updates to <alt=""> and <src=""> -->
+                        <img id="g-Sweden_NPs-Artboard_1-img" class="g-Sweden_NPs-Artboard_1-img g-aiImg" alt="Map of Sweden divided by Province, with National Parks and Nature Reserves shown." src="img/Sweden_NPs-Artboard_1.svg"/>
+                        <div id="g-ai0-1" class="g-ParkNames g-aiAbs g-aiPointText" style="top:4.2722%;margin-top:-8.2px;left:51.8%;margin-left:-49px;width:98px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/vadvetjakka-national-park/" target="_blank" class="parkname">Vadvetjåkka</a></p>
+                        </div>
+                        <div id="g-ai0-2" class="g-ParkNames g-aiAbs g-aiPointText" style="top:6.8022%;margin-top:-8.2px;left:64.8391%;margin-left:-32px;width:64px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/abisko-national-park/" target="_blank" class="parkname">Abisko</a></p>
+                        </div>
+                        <div id="g-ai0-3" class="g-ParkNames g-aiAbs g-aiPointText" style="top:10.1511%;margin-top:-8.2px;left:63.05736%;margin-left:-54px;width:108px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/stora-sjofallet--stuor-muorkke-national-park/" target="_blank" class="parkname">Stora Sjöfallet</a></p>
+                        </div>
+                        <div id="g-ai0-4" class="g-ParkNames g-aiAbs g-aiPointText" style="top:11.2373%;margin-top:-8.2px;left:47.0977%;margin-left:-44px;width:88px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/padjelanta--badjelannda-national-park/" target="_blank" class="parkname">Padjelanta</a></p>
+                        </div>
+                        <div id="g-ai0-5" class="g-ParkNames g-aiAbs g-aiPointText" style="top:13.9526%;margin-top:-8.2px;left:70.3115%;margin-left:-36.5px;width:73px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/muddus--muttos-national-park/" target="_blank" class="parkname">Muddus</a></p>
+                        </div>
+                        <div id="g-ai0-6" class="g-ParkNames g-aiAbs g-aiPointText" style="top:15.3103%;margin-top:-8.2px;left:55.877%;margin-left:-28px;width:56px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/sarek-national-park/" target="_blank" class="parkname">Sarek</a></p>
+                        </div>
+                        <div id="g-ai0-7" class="g-ParkNames g-aiAbs g-aiPointText" style="top:18.2972%;margin-top:-8.2px;left:51.2857%;margin-left:-43.5px;width:87px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/pieljekaise-national-park/national-park-facts/" target="_blank" class="parkname">Pieljekaise</a></p>
+                        </div>
+                        <div id="g-ai0-8" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:21.3707%;margin-top:-13.1px;left:79.4908%;margin-left:-57.5px;width:115px;">
+                            <!-- note anchored hyperlink to open in new page (target="_blank") -->
+                            <p class="g-pstyle1"><a href="https://www.campervansweden.com/blog/travel-information/norrbotten-sweden" target="_blank">Norrbotten</a></p>
+                        </div>
+                        <div id="g-ai0-9" class="g-ParkNames g-aiAbs g-aiPointText" style="top:25.4024%;margin-top:-15.7px;left:87.0%;margin-left:-49px;width:98px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/haparanda-skargard-national-park/" target="_blank" class="parkname">Haparanda
+                            <br>
+                            Skärgård</a></p>
+                        </div>
+                        <div id="g-ai0-10" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:28.0686%;margin-top:-13.1px;left:52.3462%;margin-left:-51px;width:102px;">
+                            <p class="g-pstyle1"><a href="https://www.swedishlapland.com/stories/the-national-parks/#:~:text=It%20contains%20the%20national%20parks,Europe%2C%20as%20big%20as%20Cyprus." target="_blank">Lappland</a></p>
+                        </div>
+                        <div id="g-ai0-11" class="g-ParkNames g-aiAbs g-aiPointText" style="top:31.7835%;margin-top:-8.2px;left:83.0%;margin-left:-45.5px;width:91px;">
+                            <p class="g-pstyle0"><a href="https://www.lansstyrelsen.se/vasterbotten/besoksmal/naturreservat/bjuroklubb.html?sv.target=12.382c024b1800285d5863a8a9&sv.12.382c024b1800285d5863a8a9.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Bjuröklubb</a></p>
+                        </div>
+                        <div id="g-ai0-12" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:34.4%;margin-top:-23.9px;left:68.9436%;margin-left:-41.5px;width:83px;">
+                            <p class="g-pstyle1"><a href="https://www.lansstyrelsen.se/vasterbotten/besoksmal/naturreservat/bjuroklubb.html?sv.target=12.382c024b1800285d5863a8a9&sv.12.382c024b1800285d5863a8a9.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank">Västerbotten</a></p>
+                        </div>
+                        <div id="g-ai0-13" class="g-ParkNames g-aiAbs g-aiPointText" style="top:34.5893%;margin-top:-8.2px;left:54.7554%;margin-left:-50.5px;width:101px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/bjornlandet-national-park" target="_blank" class="parkname">Björnlandets</a></p>
+                        </div>
+                        <div id="g-ai0-14" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:39.3826%;margin-top:-13.1px;left:37.8589%;margin-left:-50.5px;width:101px;">
+                            <p class="g-pstyle1"><a href="https://visitsweden.com/where-to-go/northern-sweden/jamtland-harjedalen/" target="_blank">Jämtland</a></p>
+                        </div>
+                        <div id="g-ai0-15" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:41.5411%;margin-top:-23.9px;left:55.2367%;margin-left:-48px;width:96px;">
+                            <p class="g-pstyle1"><a href="https://visitsweden.com/where-to-go/northern-sweden/angermanland/high-coast/" target="_blank">Ångermanland</a></p>
+                        </div>
+                        <div id="g-ai0-16" class="g-ParkNames g-aiAbs g-aiPointText" style="top:41.2872%;margin-top:-8.2px;left:32.0192%;margin-left:-41.5px;width:83px;">
+                            <p class="g-pstyle0"><a href="https://www.lansstyrelsen.se/jamtland/besoksmal/naturreservat/valadalen.html?sv.target=12.382c024b1800285d5863a88b&sv.12.382c024b1800285d5863a88b.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Vålådalen</a></p>
+                        </div>
+                        <div id="g-ai0-17" class="g-ParkNames g-aiAbs g-aiPointText" style="top:44.1836%;margin-top:-8.2px;left:67.5043%;margin-left:-50.5px;width:101px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/skuleskogen-national-park/" target="_blank" class="parkname">Skuleskogen</a></p>
+                        </div>
+                        <div id="g-ai0-18" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:48.1485%;margin-top:-23.9px;left:29.5%;margin-left:-36.5px;width:73px;">
+                            <p class="g-pstyle1"><a href="https://res.inlandsbanan.se/en/destinations/harjedalen#:~:text=H%C3%A4rjedalen%20is%20the%20highest%20county,mountain%20ranges%20in%20the%20west." target="_blank">Härjedalen</a></p>
+                        </div>
+                        <div id="g-ai0-19" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:48.5243%;margin-top:-13.1px;left:49.3119%;margin-left:-52.5px;width:105px;">
+                            <p class="g-pstyle1"><a href="https://visitsweden.com/where-to-go/northern-sweden/medelpad/" target="_blank">Medelpad</a></p>
+                        </div>
+                        <div id="g-ai0-20" class="g-ParkNames g-aiAbs g-aiPointText" style="top:48.6187%;margin-top:-8.2px;left:61.0206%;margin-left:-40.5px;width:81px;">
+                            <p class="g-pstyle0"><a href="https://www.lansstyrelsen.se/vasternorrland/besoksmal/naturreservat/stornaset.html?sv.target=12.382c024b1800285d5863a8af&sv.12.382c024b1800285d5863a8af.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Stornäset</a></p>
+                        </div>
+                        <div id="g-ai0-21" class="g-ParkNames g-aiAbs g-aiPointText" style="top:50.2479%;margin-top:-8.2px;left:20.0025%;margin-left:-51px;width:102px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/tofsingdalen-national-park/" target="_blank" class="parkname">Töfsingdalen</a></p>
+                        </div>
+                        <div id="g-ai0-22" class="g-ParkNames g-aiAbs g-aiPointText" style="top:51.153%;margin-top:-8.2px;left:36.2823%;margin-left:-40.5px;width:81px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/sonfjallet-national-park/" target="_blank" class="parkname">Sonfjället</a></p>
+                        </div>
+                        <div id="g-ai0-23" class="g-ParkNames g-aiAbs g-aiPointText" style="top:51.6055%;margin-top:-8.2px;left:46.3522%;margin-left:-32px;width:64px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/hamra-national-park/" target="_blank" class="parkname">Hamra</a></p>
+                        </div>
+                        <div id="g-ai0-24" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:55.4755%;margin-top:-23.9px;left:48.1%;margin-left:-46.5px;width:93px;">
+                            <p class="g-pstyle1"><a href="https://www.britannica.com/place/Halsingland" target="_blank">Hälsingland</a></p>
+                        </div>
+                        <div id="g-ai0-25" class="g-ParkNames g-aiAbs g-aiPointText" style="top:55.045%;margin-top:-8.2px;left:32.6359%;margin-left:-41.5px;width:83px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/fulufjallet-national-park/" target="_blank" class="parkname">Fulufjället</a></p>
+                        </div>
+                        <div id="g-ai0-26" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:59.6572%;margin-top:-13.1px;left:56.4744%;margin-left:-60.5px;width:121px;">
+                            <p class="g-pstyle1"><a href="https://www.lansstyrelsen.se/download/18.8cd5a1b19362fb4fc22899/1732537758260/Out%20and%20about-%20Nature%20and%20culture%20excursions%20in%20G%C3%A4strikland%20and%20H%C3%A4lsingland.pdf" target="_blank">Gästrikland</a></p>
+                        </div>
+                        <div id="g-ai0-27" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:59.2156%;margin-top:-11.4px;left:34.6698%;margin-left:-40.5px;width:81px;">
+                            <p class="g-pstyle2"><a href="https://www.visitdalarna.se/en/article/get-to-know-nature-in-dalarna-for-real" target="_blank">Dalarna</a></p>
+                        </div>
+                        <div id="g-ai0-28" class="g-ParkNames g-aiAbs g-aiPointText" style="top:63.8542%;margin-top:-6.5px;left:46.6905%;margin-left:-53px;width:106px;">
+                            <p class="g-pstyle3"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/farnebofjarden-national-park/" target="_blank" class="parkname">Färnebofjärden</a></p>
+                        </div>
+                        <div id="g-ai0-29" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:67.5555%;margin-top:-21px;left:30.4955%;margin-left:-33.5px;width:67px;">
+                            <p class="g-pstyle2"><a href="https://visitsweden.com/where-to-go/middle-sweden/varmland/" target="_blank">Värmland</a></p>
+                        </div>
+                        <div id="g-ai0-30" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:66.5127%;margin-top:-11.4px;left:58.8357%;margin-left:-43px;width:86px;">
+                            <p class="g-pstyle2"><a href="https://visitsweden.com/where-to-go/middle-sweden/uppland/" target="_blank">Uppland</a></p>
+                        </div>
+                        <div id="g-ai0-31" class="g-ParkNames g-aiAbs g-aiPointText" style="top:67.1618%;margin-top:-8px;left:40.7553%;margin-left:-34.5px;width:69px;">
+                            <p class="g-pstyle4"><a href="https://www.lansstyrelsen.se/vastmanland/besoksmal/naturreservat/lappland.html?sv.target=12.382c024b1800285d5863a8ac&sv.12.382c024b1800285d5863a8ac.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Lappland</a></p>
+                        </div>
+                        <div id="g-ai0-32" class="g-ParkNames g-aiAbs g-aiPointText" style="top:68.3502%;margin-top:-8.2px;left:69.5407%;margin-left:-31px;width:62px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/angso-national-park/" target="_blank" class="parkname">Ängsö</a></p>
+                        </div>
+                        <div id="g-ai0-33" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:68.6956%;margin-top:-11.8px;left:45.2896%;margin-left:-57.5px;width:115px;">
+                            <p class="g-pstyle5"><a href="https://visitsweden.fr/destinations/centre-de-la-suede/vastmanland/" target="_blank">Västmanland</a></p>
+                        </div>
+                        <div id="g-ai0-34" class="g-ParkNames g-aiAbs g-aiPointText" style="top:68.4408%;margin-top:-8.2px;left:19.428%;margin-left:-47px;width:94px;">
+                            <p class="g-pstyle0"><a href="https://www.glaskogen.se/en/#" target="_blank" class="parkname">Glaskogens</a></p>
+                        </div>
+                        <div id="g-ai0-35" class="g-ParkNames g-aiAbs g-aiPointText" style="top:70.613%;margin-top:-8.2px;left:16.3517%;margin-left:-44.5px;width:89px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/tresticklan-national-park/" target="_blank" class="parkname">Tresticklan</a></p>
+                        </div>
+                        <div id="g-ai0-36" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:72.9781%;margin-top:-14.8px;left:51.0405%;margin-left:-42px;width:84px;">
+                            <p class="g-pstyle6"><a href="https://www.britannica.com/place/Sodermanland" target="_blank">Södermanland</a></p>
+                        </div>
+                        <div id="g-ai0-37" class="g-ParkNames g-aiAbs g-aiPointText" style="top:71.77%;margin-top:-7.9px;left:41.4511%;margin-left:-39px;width:78px;">
+                            <p class="g-pstyle7"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/garphyttan-national-park/" target="_blank" class="parkname">Garphyttans</a></p>
+                        </div>
+                        <div id="g-ai0-38" class="g-ParkNames g-aiAbs g-aiPointText" style="top:72.2422%;margin-top:-8.2px;left:66.6191%;margin-left:-33px;width:66px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/tyresta-national-park/" target="_blank" class="parkname">Tyresta</a></p>
+                        </div>
+                        <div id="g-ai0-39" class="g-ParkNames g-aiAbs g-aiPointText" style="top:72.6043%;margin-top:-8.2px;left:9.071%;margin-left:-48.5px;width:97px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/kosterhavet-national-park/" target="_blank" class="parkname">Kosterhavet</a></p>
+                        </div>
+                        <div id="g-ai0-40" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:73.2022%;margin-top:-10.8px;left:41.5383%;margin-left:-32px;width:64px;">
+                            <p class="g-pstyle5"><a href="https://en.swecamp.de/destinations-in-sweden/target-strength/" target="_blank">Närke</a></p>
+                        </div>
+                        <div id="g-ai0-41" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:73.8263%;margin-top:-10.8px;left:24.300%;margin-left:-42.5px;width:85px;">
+                            <p class="g-pstyle5"><a href="https://visitsweden.com/where-to-go/southern-sweden/dalsland/" target="_blank">Dalsland</a></p>
+                        </div>
+                        <div id="g-ai0-42" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:77.2294%;margin-top:-18.2px;left:46.0914%;margin-left:-40px;width:80px;">
+                            <p class="g-pstyle8"><a href="https://scanmagazine.co.uk/ostergotland/#:~:text=Lakes%20appear%20around%20every%20corner,and%20high%20seats%20of%20innovation." target="_blank">Östergötland</a></p>
+                        </div>
+                        <div id="g-ai0-43" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:75.8829%;margin-top:-11.4px;left:15.8999%;margin-left:-47.5px;width:95px;">
+                            <p class="g-pstyle2"><a href="https://www.britannica.com/place/Bohuslan" target="_blank">Bohuslän</a></p>
+                        </div>
+                        <div id="g-ai0-44" class="g-ParkNames g-aiAbs g-aiPointText" style="top:76.3153%;margin-top:-8.2px;left:33.9951%;margin-left:-53px;width:106px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/tiveden-national-park/" target="_blank" class="parkname">Tiveden</a></p>
+                        </div>
+                        <div id="g-ai0-45" class="g-ParkNames g-aiAbs g-aiPointText" style="top:77.2204%;margin-top:-8.2px;left:75.3166%;margin-left:-64.5px;width:129px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/gotska-sandon-national-park/" target="_blank" class="parkname">Gotska Sandön</a></p>
+                        </div>
+                        <div id="g-ai0-46" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:80.0102%;margin-top:-21px;left:27.7134%;margin-left:-41px;width:82px;">
+                            <p class="g-pstyle2"><a href="https://gonaturetrip.com/destination/unique-landscape-in-south-sweden/" target="_blank">Västergötland</a></p>
+                        </div>
+                        <div id="g-ai0-47" class="g-ParkNames g-aiAbs g-aiPointText" style="top:80.0263%;margin-top:-8.2px;left:44.0053%;margin-left:-25px;width:50px;">
+                            <p class="g-pstyle0"><a href="https://www.lansstyrelsen.se/ostergotland/besoksmal/naturreservat/ycke-naturreservat.html?sv.target=12.382c024b1800285d5863a8b8&sv.12.382c024b1800285d5863a8b8.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Ycke</a></p>
+                        </div>
+                        <div id="g-ai0-48" class="g-ParkNames g-aiAbs g-aiPointText" style="top:82.6964%;margin-top:-15.7px;left:56.688%;margin-left:-55px;width:110px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/bla-jungfrun-national-park/" target="_blank" class="parkname">Blå
+                            <br>
+                            Jungfrun</a></p>
+                        </div>
+                        <div id="g-ai0-49" class="g-ParkNames g-aiAbs g-aiPointText" style="top:83.6015%;margin-top:-15.7px;left:41.4207%;margin-left:-28.5px;width:57px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/norra-kvill-national-park/" target="_blank" class="parkname">Norra
+                            <br>
+                            Kvill</a></p>
+                        </div>
+                        <div id="g-ai0-50" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:83.1238%;margin-top:-11.4px;left:70.5488%;margin-left:-41px;width:82px;">
+                            <p class="g-pstyle2"><a href="https://gotland.com/article/scenic-scenery-on-gotland/" target="_blank">Gotland</a></p>
+                        </div>
+                        <div id="g-ai0-51" class="g-ParkNames g-aiAbs g-aiPointText" style="top:85.5022%;margin-top:-15.7px;left:34.4301%;margin-left:-31px;width:62px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/store-mosse-national-park/" target="_blank" class="parkname">Store
+                            <br>
+                            Mosse</a></p>
+                        </div>
+                        <div id="g-ai0-52" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:87.0874%;margin-top:-11.4px;left:24.7846%;margin-left:-40px;width:80px;">
+                            <p class="g-pstyle2"><a href="https://www.scandi.co.uk/travel/halland/" target="_blank">Halland</a></p>
+                        </div>
+                        <div id="g-ai0-53" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:87.102%;margin-top:-11.4px;left:41.9289%;margin-left:-44.5px;width:89px;">
+                            <p class="g-pstyle2"><a href="https://www.visitsmaland.se/en/discover/nature-reserves/" target="_blank">Småland</a></p>
+                        </div>
+                        <div id="g-ai0-54" class="g-ParkNames g-aiAbs g-aiPointText" style="top:89.8015%;margin-top:-8.2px;left:20.6967%;margin-left:-41.5px;width:83px;">
+                            <p class="g-pstyle0"><a href="https://www.guidebook-sweden.com/en/guidebook/destination/haverdals-naturreservat-nature-reserve-haverdal" target="_blank" class="parkname">Haverdal</a></p>
+                        </div>
+                        <div id="g-ai0-55" class="g-ParkNames g-aiAbs g-aiPointText" style="top:90.0104%;margin-top:-8.5px;left:42.748%;margin-left:-33.5px;width:67px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/asnen-national-park/" target="_blank" class="parkname">Åsnen</a></p>
+                        </div>
+                        <div id="g-ai0-56" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:90.6376%;margin-top:-11.7px;left:55.2329%;margin-left:-33.5px;width:67px;">
+                            <p class="g-pstyle2"><a href="https://alltpaoland.se/en/articles/about-oland/#:~:text=%C3%96land%20mostly%20has%20an%20open,number%20of%20habitat%20types%20occur." target="_blank">Öland</a></p>
+                        </div>
+                        <div id="g-ai0-57" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:92.6622%;margin-top:-10.8px;left:43.0396%;margin-left:-42.5px;width:85px;">
+                            <p class="g-pstyle5"><a href="https://www.visitblekinge.se/en/solvesborg/naturreservat" target="_blank">Blekinge</a></p>
+                        </div>
+                        <div id="g-ai0-58" class="g-ParkNames g-aiAbs g-aiPointText" style="top:93.3315%;margin-top:-8.2px;left:22.1468%;margin-left:-44px;width:88px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/soderasen-national-park/" target="_blank" class="parkname">Söderåsen</a></p>
+                        </div>
+                        <div id="g-ai0-59" class="g-3Tree_points g-aiAbs g-aiPointText" style="top:94.7915%;margin-top:-8.3px;left:81.4067%;margin-left:-62px;width:124px;">
+                            <p class="g-pstyle9">National Park </p>
+                        </div>
+                        <div id="g-ai0-60" class="g-ProvinceNames g-aiAbs g-aiPointText" style="top:95.2524%;margin-top:-11.4px;left:31.0312%;margin-left:-34.5px;width:69px;">
+                            <p class="g-pstyle2"><a href="https://www.nationalgeographic.com/travel/article/paid-content-explore-landscapes-skane-sweden" target="_blank">Skåne</a></p>
+                        </div>
+                        <div id="g-ai0-61" class="g-ParkNames g-aiAbs g-aiPointText" style="top:95.3228%;margin-top:-8.2px;left:43.2945%;margin-left:-27.5px;width:55px;">
+                            <p class="g-pstyle0"><a href="https://www.lansstyrelsen.se/blekinge/besoksmal/naturreservat/almo.html?sv.target=12.382c024b1800285d5863a87c&sv.12.382c024b1800285d5863a87c.route=/&searchString=&counties=&municipalities=&reserveTypes=&natureTypes=&accessibility=&facilities=&sort=none" target="_blank" class="parkname">Almö</a></p>
+                        </div>
+                        <div id="g-ai0-62" class="g-3Tree_points g-aiAbs g-aiPointText" style="top:96.7828%;margin-top:-8.3px;left:82.2265%;margin-left:-65px;width:130px;">
+                            <p class="g-pstyle9">Nature Reserve</p>
+                        </div>
+                        <div id="g-ai0-63" class="g-ParkNames g-aiAbs g-aiPointText" style="top:96.8615%;margin-top:-8.2px;left:41.200%;margin-left:-48.5px;width:97px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/stenshuvud-national-park/" target="_blank" class="parkname">Stenshuvud</a></p>
+                        </div>
+                        <div id="g-ai0-64" class="g-ParkNames g-aiAbs g-aiPointText" style="top:97.4951%;margin-top:-8.2px;left:21.2527%;margin-left:-64px;width:128px;">
+                            <p class="g-pstyle0"><a href="https://www.sverigesnationalparker.se/en/choose-park---list/dalby-soderskog-national-park/" target="_blank" class="parkname">Dalby Söderskog</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </section>
+        <!-- new section to house procedural steps on web page development; housed in separate container due to expansive content. To be viewed below the map and aside containers, above footer -->
+        <section class="production">
+            <!-- h4 for subheading hierarchy -->
+            <h4>Creation of this webpage:</h4>
+            <p>Creation of this responsive web map was made possible through the ai2html script developed by The New York Times Company. To develop this web map, the following steps were taken:</p>
+            <!-- ordered list element -->
+            <ol>
+                <!-- list item element, line breaks between list items -->
+                <li>
+                I began by setting up an appropriate folder structure including ai (Adobe Illustrator), img (Image), css (CSS Style) and js (Javascript) folders.  I created a new <code>&lt;index.html&gt;</code> file, and a new style.css file in appropriate folders.</li>
+                <li>Next I developed a basic webpage containing all essential HTML components including a head section (stating the document type declaration, language parameters, character set encoding) and a body container (inclusive of a header, aside, section, and footer containers nested within). I linked my style.css file in the <code>&lt;head&gt;</code> section of my web page, to apply custom styles to the webpage.</li>
+                <li>To ensure that my webpage would be responsive to expansion and compression of the browser, I needed to incorporate flex parameters to my aside and section containers, which would hold the majority of my web page content. I did this by assigning a class to the main container holding both the “aside”, which would hold my narrative text, and the map “section” that would hold my map. Then, in my style.css file, I called upon this “main-container” class, and applied the “-webkit-flex” parameter. Further, I called upon the aside and on the container that would hold the web map, and assigned flex parameters to each container (aside: 30%, map container: 70%), which would specify that the aside will take up 30% of the viewport and the map container would take up 70% of the viewport. These proportions will dynamically adjust to the user’s screen size.</li>
+                <li>I also included an “@media” query into the bottom of my style.css file, specifying further parameters to the flex settings. This "@media" query enables the web page to adjust positioning of the containers in the web page, according to the scaling of the browser/viewport. On wide browsers, the containers will appear side-by-side and as expected, with the aside container placed on the left of the map. On very narrow screens or browsers (in this case, less than 800px according to my settings) the containers will dynamically shift, to hold the aside container above the map. In my <code>&lt;style.css&gt;</code> file, I applied the parameter of “column” to the “-webkit-flex-direction” and “flex-direction” settings within my "@media" query.</li>
+                <li>Now that my web page was largely formatted, I needed to install ai2html on my computer. To do this, I started by copying the JavaScript file provided by The New York Times Company, and pasting it into the js folder that I created within my project folder. This was now saved to my project as “ai2html.js”. To enable ai2html within Adobe Illustrator, I also pasted a copy of the ai2html.js file into the Adobe Illustrator software itself, via the following pathway: <i><b>“C:\Program Files\Adobe\Adobe Illustrator 2024\Presets\en_US\Scripts</b></i>. Once I navigated to Adobe’s “Scripts” folder, I placed the ai2html.js file here to successfully install the script and associated functionality into Adobe Illustrator. <i>Note: this pathway may change, depending on the version of Adobe Illustrator held on the machine. Always navigate to the newest version of Adobe Illustrator, to install the script into the version that will be accessed by the user.</i></li>
+                <li>Now that the ai2html script had been successfully installed, the next step was to select an SVG file that would be used within the webpage. I downloaded an SVG file of Sweden’s domestic and provincial boundaries, and saved it to my “ai” folder. I then proceeded to open the file in Adobe Illustrator.</li>
+                <li>From here, I styled the map according to my chosen theme within Adobe Illustrator (i.e. National Parks and Nature Reserves in Sweden). In this case, as the labels on the provinces were not text-based, I removed these label objects and replaced them with text-based labels on the map. This will allow the text to be maintained when brought over to the webpage, preventing the text from being scaled with the map image itself. <i>Note: ai2html functions best when using Arial or Georgia fonts.</i></li>
+                <li>Once I was happy with the design of my map, I ran the ai2html script to convert the ai file into HTML code that could be plugged into my existing <code>&lt;index.html&gt;</code> file. This involved first sizing the artboard appropriately to ensure that my map was framed as I wanted it to appear in my web page. I verified that my colour mode was set to RGB (a requirement for ai2html), and saved my document. Next, I ran the ai2html script (<i><b>File > Scripts > ai2html</b></i>). Running this script generates a new folder, housed in my project’s “ai” folder called “ai2html-output”. Within this new folder is an HTML file and a default-generated PNG file.</li>
+                <li>Given that I want to include an SVG file in my web page, to maintain sharp image-quality and dynamic scaling to fit various viewports, I needed to make some revisions to the file and run the script again to adjust the default settings generated in the ai2html-output that would better suit the needs of my web page. The ".ai" file contained a new text box specifying various parameters used in the script. I adjusted the <i>image_format</i> parameter from <u>auto</u> to <u>svg</u> (specifying that the output should be in SVG format). I adjusted the <i>responsiveness</i> parameter from <u>fixed</u> to <u>dynamic</u> to enable the image to expand and shrink along with the browser. Once these parameters were revised, I ran the script again (<i><b>File > Scripts > ai2html</b></i>) to generate a new output with the SVG image and a new html file that could be incorporated into my own <code>&lt;index.html&gt;</code> file. </li>
+                <li>Now that the script was regenerated, I went into the “ai2html-output” folder and moved the output files into the appropriate folders within my project: I moved the html output into the root of my project folder, alongside the <code>&lt;index.html&gt;</code> file, and moved the generated ".svg" file into my <b>img</b> file folder.</li>
+                <li>Now, I needed to open up the new html file, and copy/paste its content into my <code>&lt;index.html&gt;</code> code. The generated html includes in-line styling to hold the styles developed in Adobe Illustrator. As I have a linked CSS file within my project folder, I copied the script outlining the style properties from the html code and pasted it into my style.css file, below the styling that was already applied prior, but above the "@media query" that was placed at the bottom of the css code. I saved my style.css file. </li>
+                <li>Next, I copied all of the remaining content from the ai2html output html code, and pasted it into the <i>map-container</i> of my <code>&lt;index.html&gt;</code> file. This would successfully load the styled image of Sweden into my web page, in the appropriate container. From here, I had to adjust some of the html code to ensure that the image would successfully appear on my webpage, noting I had moved the relative location of the ".svg" image. In the generated html code, in the second <code>&lt;div&gt;</code> container that housed the svg image and source, I made the following changes: 
+                <br> 
+                I removed the <code>&lt;style=""&gt;</code> attribute, since the in-line styling had now been transferred into my style.css file. I updated the <code>&lt;alt=""&gt;</code> attribute to include alternative text for the image, and finally, I updated the <code>&lt;src=""&gt;</code> attribute to the relative pathway to my ai2html-generated ".svg" file to reflect its new location in the “img” folder. I did this by copying the relative path of the image, pasting it within the quotation marks of the <code>&lt;src=""&gt;</code> attribute, and finally changing the default back-slash to a forward-slash in the pathway. The result looks like the following: <code>&lt;<b>src="img/Sweden_BackgroundImg-Artboard_1.svg"</b>&gt;</code>. I saved my web page and verified that the image was appearing as expected, and was responsive to expansion and compression of the browser. </li> 
+                <li>Finally, to include anchored hyperlinks related to my map’s theme, I sifted through the output html, that was now embedded within my own <code>&lt;index.html&gt;</code> file, and updated each province label with an anchored hyperlink to more information about the National Parks and/or Nature Reserves found in that province. I used <code>&lt;a href="<i>link to web page</i>"&gt;</code> and <code>&lt;target=”_blank”&gt;</code> to anchor the hyperlink and ensure that when clicked, the link will open in a new browser tab.</li> 
+                <li>From there, the last step was to adjust any CSS styling in the linked style.css file as desired to further thematically style my web page.</li>
+            </ol>
+        </section>
+        <!-- footer container -->
+        <footer>
+            <!-- attribution/credit statement; anchored hyperlink to contact info -->
+            <div class="credit">
+                <h4>Created by <a href="mailto:W0513799@campus.nscc.ca" target="_blank" class="footerlinks">Deanne Watts</a>, 2025.</h4>
+                <!-- anchored hyperlink to COGS website attached to COGS logo -->
+                <a href="https://www.nscc.ca/campuses/cogs/" target="_blank"><img src="img/COGS_White_2.png" alt="White logo for COGS, NSCC" class="logo"></a>
+            </div>
+            <br>
+            <!-- non semantic div container to hold disclaimer statement, classed to apply width styling to disclaimer -->
+            <div class="disclaimer">
+                <!-- small tag for hierarchy -->
+                <i>This map is produced as a portion of the requirements of the GIS: Cartography and Geovisualization program of the Centre of Geographic Sciences, NSCC, Lawrencetown, Nova Scotia. The product is unedited, unverified and intended for educational purposes only. © NSCC COGS 2025.</i>
+            </div>
+            <br>
+            <!-- non-semantic div tag to house reference list for specific styling; each hyperlink classed footerlinks to be targeted for styling -->
+            <div class="references">
+                <!-- anchored hyperlinks to reference list in APA 7th ed. -->
+                <p>Högman, H. (2019). The subdivisions of Sweden into Lands, Provinces and Counties. History. Retrieved February 9, 2025 from <a href="https://www.hhogman.se/swe_province-county.htm" target="_blank" class="footerlinks"> History.</a>
+                <br>
+                <a href="//commons.wikimedia.org/wiki/User:Koyos" title="User:Koyos" target="_blank" class="footerlinks">Koyos</a> &amp; <a href="//commons.wikimedia.org/wiki/User:Lappl%C3%A4nning" title="User:Lapplänning" target="_blank" class="footerlinks">Lapplänning</a>. (2022). <a href="//commons.wikimedia.org/wiki/File:Sverigekarta-Landskap.svg" title="File:Sverigekarta-Landskap.svg" target="_blank" class="footerlinks">Sverigekarta-Landskap.svg</a> [SVG file]. Retrieved February 5, 2025 from <a href="https://commons.wikimedia.org/w/index.php?curid=6645422" target="_blank" class="footerlinks"> Wikipedia Commons.</a> Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" class="footerlinks">CC BY-SA 3.0.</a>
+                <br>
+                Naturvårdsverket. (2025). Nature reserve – common and strong form of protection. Retrieved February 9, 2025 from <a href="https://www.naturvardsverket.se/en/topics/protected-areas/different-types-of-nature-conservation/nature-reserve/" target="_blank" class="footerlinks">Naturvårdsverket</a>
+                <br>
+                Sveriges Nationalparker. (2025). National Park Facts. Retrieved February 9, 2025 from <a href="https://www.sverigesnationalparker.se/en/national-park-facts/" target="_blank" class="footerlinks"> Sveriges Nationalparker.</a>         
+                <br>
+                The New York Times Company. (2018). ai2html [JavaScript]. Retrieved February 5, 2025 from <a href="https://ai2html.org" target="_blank" class="footerlinks">ai2html.</a>
+                <br>
+                <a href="https://unsplash.com/@artic_studios?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" class="footerlinks">Öberg, D.</a> (2018). Beautiful Swedish Coastline! [PNG file]. Retrieved February 7, 2025 from <a href="https://unsplash.com/photos/aerial-photography-of-mountain-near-beach-qZ00RSsjg6s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" class="footerlinks">Unsplash.</a></p>
+            </div>
+            <!-- anchored back to top navigation -->
+            <p><a href="#" class="footerlinks"><b>Back to top!</b></a></p>
+        </footer>
+    </body>
+</html>
